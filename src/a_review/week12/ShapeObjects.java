@@ -6,12 +6,12 @@ public class ShapeObjects {
         //Rectangle:  w= 10,  l= 20
         Rectangle rectangle = new Rectangle(10, 20);
 
-        System.out.println(rectangle);
+        System.out.println(rectangle.toString());
 
         // Square: side = 4;
 
         Square square = new Square(5);
-        System.out.println(square);
+        System.out.println(square.toString());
 
 
 
