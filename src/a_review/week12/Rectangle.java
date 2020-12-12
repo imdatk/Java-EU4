@@ -11,13 +11,14 @@ public class Rectangle extends Shape {
             perimeter = calculatePerimeter();
         }
 
-        public double calculateArea(){
-          return width * length ;
-        }
+    @Override
+    public double calculateArea() {
+        return width * length;
+    }
 
-        public double calculatePerimeter(){
-            return 2* (width+length);
-        }
-
+    @Override
+    public double calculatePerimeter() {
+        return (width+length) * 2;
+    }
 
 }
