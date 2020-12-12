@@ -1,9 +1,9 @@
 package a_review.week12;
 
 public class Circle extends Shape{
-    public double radius, diameter;
+    public double radius, diameter; // multiple copies
 
-    public final static double PI;
+    public final static double PI;  // there is only one copy
 
     static{
         PI = Math.PI;
