@@ -8,6 +8,12 @@ public class ShapeObjects {
 
         System.out.println(rectangle);
 
+        // Square: side = 4;
+
+        Square square = new Square(5);
+        System.out.println(square);
+
+
 
     }
 
