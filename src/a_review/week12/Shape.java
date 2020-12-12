@@ -10,7 +10,7 @@ public class Shape {
         return 0;
     }
 
-    public double perimeter(){
+    public double calculatePerimeter(){
         return 0;
     }
 
