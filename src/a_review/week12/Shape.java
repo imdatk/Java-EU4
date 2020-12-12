@@ -1,5 +1,7 @@
 package a_review.week12;
 
+import java.text.DecimalFormat;
+
 public class Shape {
 
     public String name;
@@ -19,10 +21,11 @@ public class Shape {
 
     @Override
     public String toString() {
+        DecimalFormat df = new DecimalFormat("0.00");
         return "Shape{" +
                 "name='" + name + '\'' +
-                ", area=" + area +
-                ", perimeter=" + perimeter +
+                ", area=" +  df.format(area) +
+                ", perimeter=" + df.format(perimeter )+
                 '}';
     }
 
