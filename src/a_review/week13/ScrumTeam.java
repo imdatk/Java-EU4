@@ -31,6 +31,18 @@ public class ScrumTeam {
 
     }
 
+    public void hireDeveloper(Developer developer){
+        developers.add(developer);
+    }
+
+    public void hireDeveloper(Developer[] developers){
+      this.developers.addAll( Arrays.asList(developers)  );
+            /*
+                for(Developer eachDeveloper : developers )  {
+                    hireDeveloper(eachDeveloper);
+                }
+         */
+    }
 
 
 
