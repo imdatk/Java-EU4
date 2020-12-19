@@ -1,5 +1,7 @@
 package a_review.week13;
 
+import java.util.Arrays;
+
 public class AppleInc {
 
     public static void main(String[] args) {
@@ -25,9 +27,42 @@ public class AppleInc {
         System.out.println(scrum1);
 
         System.out.println("===================================================");
-        // display the developers of the scrum team:
-        for( : scrum1)
+        double budget = 0;
 
+        // display the developers of the scrum team:
+        for(Developer each : scrum1.developers){
+            System.out.println( each.name +" : "+each.calculateSalary());
+            budget += each.calculateSalary();
+        }
+
+        System.out.println("=================================================");
+        // display the testers of the scrum team:
+        for(Tester each  : scrum1.testers){
+            System.out.println(each.name +" : "+each.calculateSalary());
+            budget += each.calculateSalary();
+        }
+
+        System.out.println("====================================================");
+        // display the budget for developers and testers:
+
+        System.out.println("budget = " + budget);
+
+        System.out.println("=====================================================");
+        ScrumTeam scrum2 = new ScrumTeam("Yakup", "Ilyas", "Baky");
+        ScrumTeam scrum3 = new ScrumTeam("Yakup", "Ilyas", "Baky");
+
+        ScrumTeam[] scrums = {scrum1, scrum2, scrum3};
+
+        for(ScrumTeam eachScrum : scrums){
+            System.out.println(eachScrum);
+        }
+
+
+        System.out.println(Arrays.toString(scrums));
+
+
+        System.out.println("========================================================");
+        System.out.println(scrum1);
 
 
     }
