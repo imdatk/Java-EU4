@@ -58,8 +58,29 @@ public class ScrumTeam {
 
     }
 
+    public void terminateDeveloper(String ID){
+        Developer developer = null;
+
+        for(Developer each : developers){
+            if( each.ID.equals(ID) ){
+                developer = each;
+            }
+        }
+        developers.remove(developer);
+
+    }
 
 
+    @Override
+    public String toString() {
+        return "ScrumTeam{" +
+                "BA='" + BA + '\'' +
+                ", PO='" + PO + '\'' +
+                ", SM='" + SM + '\'' +
+                ", testers= " + testers.size() +
+                ", developers= " + developers.size() +
+                '}';
+    }
 }
 
 /*
