@@ -1,6 +1,7 @@
 package a_review.week13;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ScrumTeam {
     public String BA, PO, SM;
@@ -15,6 +16,25 @@ public class ScrumTeam {
         testers = new ArrayList<>();
         developers = new ArrayList<>();
     }
+
+    public void hireTester(Tester tester){ // adds one tester to the arraylist of tester
+        testers.add(tester);
+    }
+
+    public void hireTester(Tester[] testers){
+        this.testers.addAll(  Arrays.asList(testers ) );
+    /*
+        for(Tester eachTester : testers) {
+            hireTester(eachTester);
+        }
+     */
+
+    }
+
+
+
+
+
 
 }
 
