@@ -14,5 +14,10 @@ public final class Developer extends Employee {
         System.out.println(jobTitle+" "+name+" is fixing bug");
     }
 
+    @Override
+    public void work(){
+        System.out.println(jobTitle+" "+name+" is creating the application");
+    }
+
 
 }
