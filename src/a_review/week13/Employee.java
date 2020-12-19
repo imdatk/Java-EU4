@@ -2,7 +2,6 @@ package a_review.week13;
 
 public class Employee extends Person { // Employee IS A Person
 
-
     public double hourlyRate;
     public String jobTitle, ID;
     public boolean isFullTime;
