@@ -17,11 +17,11 @@ public class ScrumTeam {
         developers = new ArrayList<>();
     }
 
-    public void hireTester(Tester tester){ // adds one tester to the arraylist of tester
+    public void hireTester(Tester tester){ // adds one tester to the arraylist of testers
         testers.add(tester);
     }
 
-    public void hireTester(Tester[] testers){
+    public void hireTester(Tester[] testers){  // adds array of Testers to the arraylist of testers
         this.testers.addAll(  Arrays.asList(testers ) );
     /*
         for(Tester eachTester : testers) {
@@ -31,11 +31,11 @@ public class ScrumTeam {
 
     }
 
-    public void hireDeveloper(Developer developer){
+    public void hireDeveloper(Developer developer){ // adds one developer to the arraylist of developers
         developers.add(developer);
     }
 
-    public void hireDeveloper(Developer[] developers){
+    public void hireDeveloper(Developer[] developers){  // adds array of Developerss to the arraylist of Developers
       this.developers.addAll( Arrays.asList(developers)  );
             /*
                 for(Developer eachDeveloper : developers )  {
@@ -44,7 +44,7 @@ public class ScrumTeam {
          */
     }
 
-    public void terminateTester(String ID){
+    public void terminateTester(String ID){ // removes tester by ID
        // testers.removeIf( p -> p.ID.equals(ID) );
 
         Tester tester = null;
@@ -58,7 +58,7 @@ public class ScrumTeam {
 
     }
 
-    public void terminateDeveloper(String ID){
+    public void terminateDeveloper(String ID){ // developer tester by ID
         Developer developer = null;
 
         for(Developer each : developers){
