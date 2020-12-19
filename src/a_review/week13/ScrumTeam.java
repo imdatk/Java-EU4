@@ -70,6 +70,9 @@ public class ScrumTeam {
 
     }
 
+    public void dailyStandUp(){
+        System.out.println(SM+" is doing daily stand up meeting");
+    }
 
     @Override
     public String toString() {
@@ -81,6 +84,7 @@ public class ScrumTeam {
                 ", developers= " + developers.size() +
                 '}';
     }
+
 }
 
 /*
