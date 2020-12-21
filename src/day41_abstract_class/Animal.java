@@ -28,6 +28,11 @@ public abstract class Animal {
 	}
 	
 	//Constructor
+
+	public Animal() {
+
+	}
+
 	public Animal(int age) {
 		this.age=age;
 	}
