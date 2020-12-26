@@ -1,5 +1,7 @@
 package a_review.week14;
 
+import java.text.DecimalFormat;
+
 public class Cylinder extends Shape implements hasVolume {
 
     double radius;
@@ -31,5 +33,17 @@ public class Cylinder extends Shape implements hasVolume {
     @Override
     public double calculateVolume() {
         return Math.pow(radius, 2) * height * Math.PI;
+    }
+
+    @Override
+    public String toString() {
+        DecimalFormat formatObj = new DecimalFormat("0.00");
+        return "Cylinder{ " +
+                "radius= " + radius +
+                ", height= " + height +
+                ", volume= " + formatObj.format(volume) +
+                ", area= " + formatObj.format(area) +
+                ", perimeter= " + formatObj.format(perimeter) +
+                '}';
     }
 }

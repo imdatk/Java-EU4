@@ -15,6 +15,8 @@ package a_review.week14;
 
      */
 
+import java.text.DecimalFormat;
+
 public class Circle extends Shape{
 
     double radius;
@@ -44,6 +46,15 @@ public class Circle extends Shape{
         return radius * 2 * Math.PI;
     }
 
+    @Override
+    public String toString() {
+        DecimalFormat df = new DecimalFormat("0.00");
+        return "Circle {" +
+                "radius= " + radius +
+                ", area= " + df.format(area) +
+                ", perimeter =" + df.format(perimeter) +
+                '}';
+    }
 
 
 }
