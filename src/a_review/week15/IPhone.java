@@ -14,7 +14,7 @@ public class IPhone extends Phone implements AppleApp{
 
         if(price > 2000) {
             System.out.println("Iphone's price cannot be more than 2000");
-            price = 0;
+            this.price = 0;
         }
     }
 
