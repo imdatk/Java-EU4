@@ -10,7 +10,7 @@ public class Samsung extends Phone implements AndroidApp{
      */
 
     public Samsung(String model, double size, double price) {
-        super("Samsung", model, size, price);
+        super("Samsung", model, price, size);
 
         if(price > 1500) {
             System.out.println("Samsung cannot be more than 1500");

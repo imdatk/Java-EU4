@@ -10,7 +10,7 @@ public class IPhone extends Phone implements AppleApp{
      */
 
     public IPhone(String model, double size, double price) {
-        super("IPhone", model, size, price);
+        super("IPhone", model, price, size);
 
         if(price > 2000) {
             System.out.println("Iphone's price cannot be more than 2000");
