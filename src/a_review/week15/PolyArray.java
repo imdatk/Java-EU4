@@ -13,7 +13,7 @@ public class PolyArray {
         phones[0] = phone1;
         phones[1] = phone2;
         phones[2] = phone3;
-
+        
         for(Phone each : phones) {
             System.out.println(each.brand + " " + each.price);
 
