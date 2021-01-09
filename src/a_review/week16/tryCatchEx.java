@@ -7,13 +7,15 @@ public class tryCatchEx {
         try {
 
             System.out.println(s.charAt(1));
-           // throw new RuntimeException();
+            //throw new RuntimeException();
+
+            Thread.sleep(-10);
 
         }catch (StringIndexOutOfBoundsException e) {
             System.out.println(s.charAt(0));
-        } catch (RuntimeException e) {
-            System.out.println("Exception");
-        }finally {
+        }catch (InterruptedException e) {
+            System.out.println(e.getMessage());
+        } finally {
             System.out.println("Finally block");
         }
 
